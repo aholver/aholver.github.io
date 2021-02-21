@@ -1,2 +1,4 @@
 name: Arne Holverscheid
 markdown: kramdown
+
+theme: jekyll-theme-minimal
