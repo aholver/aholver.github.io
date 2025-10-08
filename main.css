@@ -74,3 +74,39 @@ a:hover {
 .pub-list { margin-left: 1.25rem; }
 .pub-list li { margin: 0 0 0.75rem 0; line-height: 1.5; }
 #content h2 { margin-top: 2rem; }
+
+/* ---------- Subpages ---------- */
+body.page #content {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  text-align: left;
+}
+
+body.page h1 { margin: 0 0 1.25rem 0; }
+body.page h2 { margin: 2rem 0 0.75rem 0; }
+
+/* Ordered lists for publications */
+.pub-list {
+  margin-left: 1.25rem;
+  line-height: 1.55;
+}
+.pub-list li { margin-bottom: 0.6rem; }
+
+/* Make in-page anchor jumps account for sticky header */
+html { scroll-padding-top: 72px; }
+
+/* ---------- Subpages ---------- */
+body.page #content {
+  position: static;      /* reset the absolute centering */
+  top: auto;             /* reset */
+  left: auto;            /* reset */
+  transform: none;       /* reset */
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem;
+  text-align: left;
+}
+
+body.page h1 { margin: 0 0 1.25rem 0; }
+body.page h2 { margin: 2rem 0 0.75rem 0; }
