@@ -174,3 +174,22 @@ body.home #content {
 @media (max-width: 480px) {
   .sidebar .avatar { width: 128px; }
 }
+
+/* ---- CV page tweaks ---- */
+.cv-actions { margin: 0.5rem 0 1rem; }
+.cv-actions .button {
+  display: inline-block;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.cv-actions .button:hover { border-color: #ccc; }
+.cv-note { margin-left: 0.5rem; color: #555; font-size: 0.95em; }
+.cv-embed { margin-top: 1rem; }
+
+/* Hide the PDF embed on phones/tablets; show only the link */
+@media (max-width: 860px) {
+  .cv-embed { display: none; }
+}
